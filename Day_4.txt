@@ -1,0 +1,41 @@
+*How to push the folder into local to github repository
+ 
+ go to folder --> right click --> click git bash
+ 
+ git add .
+
+ git commit -m "___"
+
+ git push
+
+*Restore 
+
+ git restore:- Restore specified paths in the working tree with some contents from a restore source.
+	       If a path is tracked but does not exits in the restore source.It will be removed to 
+	       match the source
+
+ git restore --<file name>
+
+*Revert:- Revert some existing commits 
+	  git revert commit id
+	  
+	  If given one or more existing commands. revert the changes that the related patches introduce,
+	  and record some new commits that record them.
+
+	  This requires your working tree to be clean(no modification from the HEAD commit)
+
+*Fork:- A fork is a copy of a repository.
+        Forking a repository a repository allos you to freely experiment with changes without effecting
+	the original project.
+
+Git Merge:- Join two or more developement history together.
+
+	Incorporates changes from the named commits.
+(since the time their histories diverged from the current breanch) into the current branch. This command is used by git pull to incorporate changes from anothor repository and can be used by hand to merge changes from one branch into another.
+
+*Pull Request:- when merging pull request, you can allow any combination of merge commits, squashing or repository
+
+At least one option must be enabled. If you have linear history requirement enabled on any protected branch, ypu must enable suashing or rebasing.
+
+* git commit -am "--"	
+
