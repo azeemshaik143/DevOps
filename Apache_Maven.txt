@@ -1,0 +1,76 @@
+
+                       Apache Maven
+
+what is maven?
+
+Maven is a tool that is used to compile, validate codes and analyse the test-cases in the code.
+
+* Manages the building, reporting and documentation from source control management(SCM).
+* Maven projects are configure through projects object model(POM).
+* pom.xml file contains documentation for all the objects, properties, methods and events.
+
+What maven is capable of?
+
+* Information of project is centralized through maven
+* Build process is managed
+* Data about the software is gathered and then build itself
+* Document the software and our project
+* Deployable artifacts can be gererated from source code
+* Your source code is compiled, packed, test and distributed
+* Reports is created, website is generated for the project
+
+Maven Build Life Cycle:-
+
+* In maven, the build run is using a predefined and ordered set of steps to call the build lifr cycle
+* The build tasks that will be performed during each phase are determined by the configuration in the project file, and it perticular the selected   packaging
+* Maven relies on build life cycles to define the process of building and distributing artifacts(eg:-jar files, war files)
+* There are three build-in-build life cycles
+	-Default - handles project building and deployment
+	-Clean - handles project clearing
+	-Site - handles projects site generation
+
+Maven Artifacts:-
+
+* An artifact is a file resulting from packaging a project
+* Can be a jar, war, ear,.xml file, for example
+* Artifacts are deployed in repositories so they can be used, as dependies, by other components:-
+	Group Id-An unique identifier for a group of related artifacts. usually naed like java packages(eg:-pt.jpereira.mobile)
+	Artifact id - An unique identifier, within the context of Gruopid, that identifies the artifacts(project) (eg:- puzzle)
+	Version- Also called artifact coordinates
+
+Maven Repository Flow:-
+
+Step 1:- when developer executes mvn command it will go and check in local repository.
+	If found the dependecies and plug in the local repo. Developer will go and search in remote repository
+Step 2:- If not founding local repository from developer machines it will go and search in remote repository
+Step 3:- From remote repository required dependencies or plug ins will get stored in local reposiory
+Step 4:- From the local repository developer will get the output
+
+Project Object Module:-
+
+* POM for short.
+* XML file located at the root of the project(pom.xml)
+* It iincludes can configuration for uour project, including:-
+	Information about the project
+	Configuration details to build the project
+	Contains default values for mos of the projects. Eg:-Source dir, target dir
+	Dependies of the project
+	Configuration about plugin and goals
+	Used repositories 
+
+Declaring Dependencies:-
+
+	while declaring the dependies, coordinates of the artifacts must be provided
+	
+	GroupID    : A unique identifier for the group of related artifact.
+	ArtifactID : A Artifact is a file which made after packaging of a project and ArtifactID is a unique identifier within the context of Group                      ID and it identifies the artifacts
+	Version    : It is identifier for the release or build number of project
+
+How to install Apache Maven on windows
+
+Prerequirites:-
+* A system running windows
+* A working internet connection
+* Access to account with administration priviliges 
+* Access to the command prompt
+* A copy of java insalled and ready to use, with the JAVA_Home environment variable set up.
