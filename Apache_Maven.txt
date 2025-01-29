@@ -63,7 +63,7 @@ Declaring Dependencies:-
 	while declaring the dependies, coordinates of the artifacts must be provided
 	
 	GroupID    : A unique identifier for the group of related artifact.
-	ArtifactID : A Artifact is a file which made after packaging of a project and ArtifactID is a unique identifier within the context of Group                      ID and it identifies the artifacts
+	ArtifactID : A Artifact is a file which made after packaging of a project and ArtifactID is a unique identifier within the context of Group                        ID and it identifies the artifacts
 	Version    : It is identifier for the release or build number of project
 
 How to install Apache Maven on windows
@@ -74,6 +74,7 @@ Prerequirites:-
 * Access to account with administration priviliges 
 * Access to the command prompt
 * A copy of java insalled and ready to use, with the JAVA_Home environment variable set up.
+
 
 Maven Through Terminal:-
 
