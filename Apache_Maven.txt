@@ -121,3 +121,30 @@ Maven lifecycle phases:-
 * Apache Maven has an advantage that is when we run any of the lifecycle phases which will also includes previous lifecycle phases as well.
    ex:- If we run "mvn package" (which is fourth phase) which is also run previous phases as well(validate, compile, test)
 
+Access to command prompt 
+A copy of java installed and ready to use with the JAVA_HOME environment variable setup 
+
+Step 1 : Download Maven zip file and extract folder structure of maven  bin, boot, count, lib 
+Step 2 : Add MAVEN_HOME system variable 
+Step 3 : Add MAVEN_HOME directory in path variable 
+
+How to install java 
+
+          First go to the browser and search Download java 
+	• Select windows and select 64 Installer click on the link 
+	• so after clicking on the link the java jdk will be download it into your local machine 
+          it will download into a c drive in local machine 
+          open the c drive go to program file then go to java and then click on jdk and select and copy the path 
+          After selecting the path go to edit the system environment variables then click on ev select new gave variable name as JAVA_HOME and that path which you have copied from the jdk
+          Select Path in variable path then click on edit then click on new paste the jdk path here also 
+          ckeck on command prompt search java -version then it will show you what version you have download 
+  
+
+
+
+
+
+
+
+
+
