@@ -74,3 +74,49 @@ Prerequirites:-
 * Access to account with administration priviliges 
 * Access to the command prompt
 * A copy of java insalled and ready to use, with the JAVA_Home environment variable set up.
+
+Maven Through Terminal:-
+
+* Install the Maven tar file after verifying the signature.
+* After installing the Maven, check its version from ubuntu terminal by using the below command
+	mvn -version
+* Below command will create a project using maven.
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Maven lifecycle phases:-
+
+* Validate :- Check if the project is correct, having all the necessary information.
+
+	syntax :- mvn validate
+
+* Compile:- compile the source code of the project.
+
+	syntax :- mvn compile
+
+* test :- test the compiled source code using suitable unit testing framework. These test should not require the code be packaged or deployed.
+
+	syntax:- mvn test
+
+* package:-take the compile code and package it in its distributed format, such as JAR.
+
+	syntax:- mvn package
+
+* integration test:- Process and deploy the package into an environment where integration tests can be run.
+
+* verify:- Run any checksto verify the packageis validand meets quality criteria.
+
+	syntax:- mvn verify
+
+* install:- install the package into the local repository for use as a dependency in other projects locally.
+
+	syntax:- mvn install
+
+* deploy:- done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and            projects.
+
+	syntax:- mvn deploy
+* .M2 is a local repository of the Apache Maven where we run dependies and plugin where shared
+
+* Apache Maven has an advantage that is when we run any of the lifecycle phases which will also includes previous lifecycle phases as well.
+   ex:- If we run "mvn package" (which is fourth phase) which is also run previous phases as well(validate, compile, test)
+
