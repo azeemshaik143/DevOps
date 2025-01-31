@@ -1,0 +1,63 @@
+
+
+Apache Tomcat folder structure:-
+
+   . conf - it is a directory contains configuration files.
+
+   . bin - binary, used to start and stop.
+
+   . webapps - Hosting of the Application.
+
+   . logs - useful for tracking web application deployment issues.
+
+   . lib - libraries
+
+   . Temp - temporary
+
+
+How to Access the application
+	
+	(URL - 127.0.0.1:8080) or (localhost:8080/aja)
+
+	where aja is an artifact name.
+
+
+mvn archetype:generate -DgroupId=com.example.aja -DartifactId=aja -DarchetypeArtifactId=maven -archetype-webapp -DinteractiveMode=false
+
+
+How we can place the artifact from the maven project of target folder to Apachel Tomcat webapps folder.
+
+	cp<path where artifact> <path where webapps softomcat>
+	cp<source><destination>
+	<destination>cp/<source>
+
+* If we do any of the configuration changes we should restart the server.
+
+* To chane the port number of the Apache Tomcat we should stop the server then change the default port number to other port number then we can start
+
+* To deploy the application another way is by using the Tomcat GUI.
+
+* Access the URL of the Tomcat then search for a war file to deploy then
+	
+	click on chose file button
+	It will open dialog box
+	In the dealog box we need to select the artifact and click on open button then need to click on deploy button.
+
+* How can we access the Apache Tomcat GUI?
+
+	Home folder of Apache Tomcat --> conf.
+	modify "tomcat-user.xml" (using text editor, eg:-vi)
+	vi tomcat-user.xml
+	     or
+	Go to below line
+	<user username = "admin"
+	need uncomment those lines ---<!--"&"->
+	once we tomcat.xml modify we need to save and quit.
+
+* To view the last n number of lines where n is a number.
+
+  Command to view the las 15 lines is 
+	tail -15 <file name>
+
+* To view the first n number of lines when n is a number
+	head -15 <file name>
